@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // @route   GET /
 // @desc    Test Base API
 // @access  Public
-app.get("/", (_req, res) => {
+app.get("/", (_req: any, res: { send: (arg0: string) => void }) => {
   res.send("API Running");
 });
 
